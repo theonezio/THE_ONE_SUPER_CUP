@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The One Community - SUPER CUP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #050505; color: white; scroll-behavior: smooth; }
+        
+        /* Hero Section - အနက်ရောင်ဖုံးမှုကို 0.2 သို့ လျှော့ချထားသည် */
+        .hero-bg { 
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://i.pinimg.com/736x/24/d5/68/24d5685afca388adf0b1850ab5acc0d3.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 60vh; 
+        }
+        @media (min-width: 768px) { .hero-bg { height: 80vh; } }
+        
+        .tour-card { 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+            border: 1px solid rgba(255,255,255,0.1); 
+            min-width: 220px; 
+            background: #111;
+        }
+        
+        @media (min-width: 768px) { .tour-card { min-width: 260px; } }
+        
+        .tour-card:hover { 
+            transform: translateY(-10px); 
+            border-color: #dc2626; 
+        }
+
+        /* Card ပုံပေါ်က အနက်ရောင်ဖုံးမှုကို ပေါ့ပါးအောင် ပြင်ထားသည် */
+        .overlay-effect {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body>
+
+    <header class="fixed w-full z-50 transition-all duration-300 px-4 py-4 flex justify-between items-center bg-black/40 backdrop-blur-md border-b border-white/5">
+        <div class="flex items-center gap-2">
+            <div class="w-2.5 h-2.5 bg-red-600 rounded-full shadow-[0_0_10px_rgba(220,38,38,0.8)]"></div>
+            <span class="font-bold tracking-widest text-xs md:text-lg uppercase">THE ONE COMMUNITY</span>
+        </div>
+        <nav class="hidden md:flex gap-8 text-xs font-medium uppercase tracking-widest text-gray-300">
+            <a href="#" class="hover:text-red-500 transition-colors">Home</a>
+            <a href="https://t.me/THE_ONE_eCommunity" target="_blank" class="hover:text-red-500 transition-colors">Channel</a>
+            <a href="https://t.me/eMFootball_Players" target="_blank" class="hover:text-red-500 transition-colors">Group</a>
+            <a href="https://t.me/Profit_Zio" target="_blank" class="hover:text-red-500 transition-colors">Contacts</a>
+        </nav>
+    </header>
+
+    <section class="hero-bg relative flex items-center px-6 md:px-20">
+        <div class="max-w-4xl">
+            <h1 class="text-4xl md:text-9xl font-black leading-tight tracking-tighter text-white">THE ONE<br>SUPER CUP</h1>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-24 px-4 md:px-20">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-5xl font-bold uppercase tracking-tight">BE UNIQUE</h2>
+            <div class="w-16 h-1 bg-red-600 mx-auto mt-4"></div>
+        </div>
+
+        <div class="flex gap-4 overflow-x-auto no-scrollbar pb-8">
+            <!-- Card 1 -->
+            <a href="https://shelbyzio.github.io/PlyaerListSuperCup/" target="_blank" class="tour-card group relative overflow-hidden rounded-xl cursor-pointer block w-[220px] md:w-[260px]">
+                <img src="FINALIST (8).jpg" class="w-full h-[300px] object-cover">
+                <div class="absolute inset-0 overlay-effect flex flex-col justify-end p-4">
+                    <h3 class="text-sm md:text-xl font-bold uppercase text-white drop-shadow-lg">SUPER LEAGUE Players</h3>
+                </div>
+            </a>
+            <!-- Card 2 -->
+            <a href="https://shelbyzio.github.io/Premier_PlayOff/" target="_blank" class="tour-card group relative overflow-hidden rounded-xl cursor-pointer block w-[220px] md:w-[260px]">
+                <img src="FINALIST (57).jpg" class="w-full h-[300px] object-cover">
+                <div class="absolute inset-0 overlay-effect flex flex-col justify-end p-4">
+                    <h3 class="text-sm md:text-xl font-bold uppercase text-white drop-shadow-lg">Premier League</h3>
+                </div>
+            </a>
+            <!-- Card 3 -->
+            <a href="https://shelbyzio.github.io/laliga_playoff/" target="_blank" class="tour-card group relative overflow-hidden rounded-xl cursor-pointer block w-[220px] md:w-[260px]">
+                <img src="FINALIST (58).jpg" class="w-full h-[300px] object-cover">
+                <div class="absolute inset-0 overlay-effect flex flex-col justify-end p-4">
+                    <h3 class="text-sm md:text-xl font-bold uppercase text-white drop-shadow-lg">Spain LaLiga</h3>
+                </div>
+            </a>
+            <!-- Card 4 -->
+            <a href="https://shelbyzio.github.io/seriea_playoff/" target="_blank" class="tour-card group relative overflow-hidden rounded-xl cursor-pointer block w-[220px] md:w-[260px]">
+                <img src="PWAUNG (29).jpg" class="w-full h-[300px] object-cover">
+                <div class="absolute inset-0 overlay-effect flex flex-col justify-end p-4">
+                    <h3 class="text-sm md:text-xl font-bold uppercase text-white drop-shadow-lg">Italy Serie A</h3>
+                </div>
+            </a>
+            <!-- Card 5 -->
+            <a href="https://shelbyzio.github.io/myanmar_playoff/" target="_blank" class="tour-card group relative overflow-hidden rounded-xl cursor-pointer block w-[220px] md:w-[260px]">
+                <img src="PWAUNG (31).jpg" class="w-full h-[300px] object-cover">
+                <div class="absolute inset-0 overlay-effect flex flex-col justify-end p-4">
+                    <h3 class="text-sm md:text-xl font-bold uppercase text-white drop-shadow-lg">Myanmar National League</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-white/5 text-center text-[10px] text-gray-600 tracking-widest uppercase">
+        <p>&copy; 2026 THE ONE COMMUNITY.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
